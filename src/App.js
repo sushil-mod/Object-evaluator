@@ -6,7 +6,10 @@ const objectdb = {
   "📎": "paper clip",
   "📅": "claender",
   "🧭": "compass",
-  "🎈": "balloon"
+  "🎈": "balloon",
+  "⏱️": "Stopwatch",
+  "⏰": "Alarm Clock",
+  "💣": "Bomb"
 };
 
 var objectarray = Object.keys(objectdb);
@@ -40,7 +43,7 @@ export default function App() {
           minWidth: "80%"
         }}
       ></input>
-      <div>{meaning}</div>
+      <div style={{ padding: "1rem", color: "red" }}>{meaning}</div>
       <div>
         {objectarray.map((item) => (
           <span
